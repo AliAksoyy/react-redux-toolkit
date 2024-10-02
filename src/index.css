@@ -244,9 +244,10 @@ ul {
   margin-bottom: 1rem;
 }
 
-.form-textarea {
-  height: 7rem;
+.form-input:focus {
+  outline: none;
 }
+
 ::placeholder {
   font-family: inherit;
   color: var(--grey-400);
