@@ -17,7 +17,7 @@ const initialState = {
   numOfPages: 1,
   page: 1,
   stats: {},
-  monthlyApplications: [{ date: "Mar 2022", count: 8 }],
+  monthlyApplications: [{ date: "Mar 2022", count: 8 },{ date: "Apr 2022", count: 18 }],
   ...initialFiltersState,
 };
 
