@@ -3,11 +3,13 @@ import links from "../utils/links";
 import { toggleSidebar } from "../features/user/userSlice";
 import { useDispatch } from "react-redux";
 
-const NavLinks = () => {
+const NavLinks = ({ smallSidebar }) => {
   const dispatch = useDispatch();
 
   const toggle = () => {
-    dispatch(toggleSidebar());
+    if (smallSidebar) {
+      dispatch(toggleSidebar());
+    }
   };
 
   return (
@@ -21,7 +23,7 @@ const NavLinks = () => {
               return isActive ? "nav-link active" : "nav-link";
             }}
             key={id}
-            // onClick={toggle}
+            onClick={toggle}
             end
           >
             <span className="icon">{icon}</span>

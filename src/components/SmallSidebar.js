@@ -30,7 +30,7 @@ const SmallSidebar = () => {
           <header>
             <Logo />
           </header>
-          <NavLinks toggleSidebar={toggle}></NavLinks>
+          <NavLinks smallSidebar toggleSidebar={toggle}></NavLinks>
         </div>
       </div>
     </Wrapper>

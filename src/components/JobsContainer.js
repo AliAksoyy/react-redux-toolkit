@@ -19,8 +19,6 @@ const JobsContainer = () => {
   } = useSelector((store) => store.allJobs);
   const dispatch = useDispatch();
 
-  console.log(numOfPages);
-
   useEffect(() => {
     dispatch(getAllJobs());
   }, [page, search, searchStatus, searchType, sort]);
