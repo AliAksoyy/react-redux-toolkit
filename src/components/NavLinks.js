@@ -21,7 +21,7 @@ const NavLinks = () => {
               return isActive ? "nav-link active" : "nav-link";
             }}
             key={id}
-            onClick={toggle}
+            // onClick={toggle}
             end
           >
             <span className="icon">{icon}</span>
